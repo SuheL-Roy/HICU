@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('listening_answers', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('listening_module_id')->nullable();
+            $table->string('question_serial_no')->nullable();
+            $table->string('answer')->nullable();
             $table->timestamps();
         });
     }

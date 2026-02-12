@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class ListeningAnswer extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
 }

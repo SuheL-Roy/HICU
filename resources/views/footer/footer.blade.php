@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-6 my-1">
                 <p class="m-0">Made with &#9829; by Team <a href="https://themeforest.net/user/phoenixcoded"
-                        target="_blank"> Phoenixcoded</a></p>
+                        target="_blank"></a></p>
             </div>
             <div class="col-sm-6 ms-auto my-1">
                 <ul class="list-inline footer-link mb-0 justify-content-sm-end d-flex">

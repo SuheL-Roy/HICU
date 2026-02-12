@@ -96,7 +96,7 @@
                     </ul>
                 </li>
 
-                  <li class="pc-item pc-hasmenu">
+                <li class="pc-item pc-hasmenu">
                     <a href="javascript:void(0);" class="pc-link">
                         <span class="pc-micon">
                             <i class="ph-duotone ph-projector-screen-chart"></i>
@@ -107,17 +107,23 @@
                         </span>
                     </a>
 
-                    <!-- Submenu -->
                     <ul class="pc-submenu">
                         <li class="pc-item">
                             <a href="{{ route('listening_module.list') }}" class="pc-link">
                                 <span class="pc-mtext">Add Listening Module</span>
                             </a>
                         </li>
+
+                        <li class="pc-item">
+                            <a href="{{ route('listening_answer_module.create') }}" class="pc-link">
+                                <span class="pc-mtext">Add Listening Answer</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
-                  <li class="pc-item pc-hasmenu">
+
+                <li class="pc-item pc-hasmenu">
                     <a href="javascript:void(0);" class="pc-link">
                         <span class="pc-micon">
                             <i class="ph-duotone ph-projector-screen-chart"></i>
@@ -137,7 +143,7 @@
                         </li>
                     </ul>
                 </li>
-                  <li class="pc-item pc-hasmenu">
+                <li class="pc-item pc-hasmenu">
                     <a href="javascript:void(0);" class="pc-link">
                         <span class="pc-micon">
                             <i class="ph-duotone ph-projector-screen-chart"></i>

@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\ExamModuleController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ListeningAnswerController;
 use App\Http\Controllers\ListeningController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\MerchantController;
@@ -89,4 +90,12 @@ Route::prefix('exam-module/')->middleware('auth')->name('exam_module.')->group(f
     Route::get('/list', [ExamModuleController::class, 'list'])->name('list');
     Route::get('/destroy', [ExamModuleController::class, 'destroy'])->name('destroy');
     Route::post('/store', [ExamModuleController::class, 'store'])->name('store');
+});
+
+/**-------------- Listening Answer---------------**/
+Route::prefix('listening-answer-module/')->middleware('auth')->name('listening_answer_module.')->group(function () {
+    Route::get('/create', [ListeningAnswerController::class, 'create'])->name('create');
+    // Route::get('/answer', [ListeningAnswerController::class, 'answer'])->name('answer');
+    Route::get('/answer/{module_id}', [ListeningAnswerController::class, 'answer'])->name('answer');
+    Route::post('/store', [ListeningAnswerController::class, 'store'])->name('store');
 });
