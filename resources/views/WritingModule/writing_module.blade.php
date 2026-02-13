@@ -55,7 +55,7 @@
                                                             </option>
                                                             @foreach ($module_type as $item)
                                                                 <option value="{{ $item->id }}">
-                                                                    {{ $item->name }}
+                                                                    {{ $item->name ?? '' }}
                                                                 </option>
                                                             @endforeach
 
@@ -65,7 +65,7 @@
                                                     <div class="col-lg-12">
                                                         <input type="text"  class="form-control mt-2"
                                                             name="name" id="name" placeholder="Enter your Writing module name">
-                                                            <input type="text" name="exam_module_id" value="{{ $exam_module->id }}" hidden>
+                                                            <input type="text" name="exam_module_id" value="{{ $exam_module->id ?? '' }}" hidden>
                                                         <span class="text-danger error-message" id="nameError"></span>
                                                     </div>
 

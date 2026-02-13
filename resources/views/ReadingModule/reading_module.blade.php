@@ -51,7 +51,7 @@
                                                         <input type="text"  class="form-control mt-2"
                                                             name="name" id="name" placeholder="Enter your reading module name">
                                                               <input type="text" name="exam_module_id"
-                                                            value="{{ $exam_module->id }}" hidden>
+                                                            value="{{ $exam_module->id ?? '' }}" hidden>
                                                         <span class="text-danger error-message" id="nameError"></span>
                                                     </div>
 

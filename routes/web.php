@@ -7,6 +7,7 @@ use App\Http\Controllers\ExamModuleController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ListeningAnswerController;
 use App\Http\Controllers\ListeningController;
+use App\Http\Controllers\ListeningTestController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\MerchantController;
 use App\Http\Controllers\ProductController;
@@ -44,8 +45,14 @@ Route::middleware('auth')->name('frontend.')->group(function () {
     Route::get('/listening', [FrontendController::class, 'listening'])->name('listening');
     Route::get('/reading', [FrontendController::class, 'reading'])->name('reading');
     Route::get('/writing-type', [FrontendController::class, 'writing_type'])->name('writing_type');
-    Route::get('/writing-gt', [FrontendController::class, 'writing_gt'])->name('writing_gt');
-    Route::get('/writing-academic', [FrontendController::class, 'writing_academic'])->name('writing_academic');
+    Route::get('/writing', [FrontendController::class, 'writing'])->name('writing');
+   
+});
+
+/**--------------Listening Modules Test---------------**/
+Route::middleware('auth')->name('ListeningTest.')->group(function () {
+    Route::get('/listening-test', [ListeningTestController::class, 'listening_test'])->name('listening_test');
+    Route::post('/listening-test-store', [ListeningTestController::class, 'listening_test_store'])->name('listening_test_store');
 });
 
 

@@ -54,7 +54,7 @@
                 </li>
 
                 <!-- Parent Menu -->
-                <li class="pc-item pc-hasmenu">
+                {{-- <li class="pc-item pc-hasmenu">
                     <a href="javascript:void(0);" class="pc-link">
                         <span class="pc-micon">
                             <i class="ph-duotone ph-projector-screen-chart"></i>
@@ -74,7 +74,7 @@
                         </li>
 
                     </ul>
-                </li>
+                </li> --}}
                 <li class="pc-item pc-hasmenu">
                     <a href="javascript:void(0);" class="pc-link">
                         <span class="pc-micon">

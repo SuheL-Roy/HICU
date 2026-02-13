@@ -293,15 +293,15 @@
         <p class="subtitle">Venue - HEXA'S Zindabazar</p>
 
         <div class="button-container">
-            <a href="#listening" class="exam-button">
+            <a href="{{ route('frontend.listening') }}" class="exam-button">
                 <span class="button-icon">🎧</span>
                 <span>Listening</span>
             </a>
-            <a href="#writing" class="exam-button">
+            <a href="{{ route('frontend.writing_type') }}" class="exam-button">
                 <span class="button-icon">📝</span>
                 <span>Writing</span>
             </a>
-            <a href="#reading" class="exam-button">
+            <a href="{{ route('frontend.reading') }}" class="exam-button">
                 <span class="button-icon">📖</span>
                 <span>Reading</span>
             </a>
